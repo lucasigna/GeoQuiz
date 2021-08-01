@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Vista PC */
+.bodyIndex {
+  background-color: #9BC1BC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+}
+
+.bodyIndex .mainCentrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.bodyIndex .mainCentrado h1 {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #111D4A;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bodyIndex .mainCentrado a {
+  text-decoration: none;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75vw;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones__opcion {
+  width: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones__opcion div {
+  background-color: #eac335d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 300px;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones__opcion div h2 {
+  display: block;
+  margin: auto 0;
+  font-family: "Baloo Chettan 2", cursive;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #92140C;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones__opcion div h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 700;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones__opcion:hover {
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones .divBandera {
+  background-image: url("../img/banderas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bodyIndex .mainCentrado__divContenedorOpciones .divCapital {
+  background-image: url("../img/capitales.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bodyBanderas {
+  background-color: #9BC1BC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+}
+
+.bodyBanderas main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.bodyBanderas main h1 {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #111D4A;
+  font-weight: 700;
+}
+
+.bodyBanderas main #imagenBandera {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.bodyBanderas main .btnTextoOpcion {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  background-color: #EAC435;
+  color: #0A090C;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bodyBanderas main .btnTextoOpcion:hover {
+  background-color: #f8cf3b;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bodyBanderas main .btnSiguiente {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background-color: #111D4A;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bodyBanderas main .btnSiguiente:hover {
+  background-color: #1b2d6e;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Para vista en tablet */
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .bodyIndex .mainCentrado h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #111D4A;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones {
+    margin: 0 auto;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones__opcion {
+    width: 35vw;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones__opcion div {
+    height: 200px;
+  }
+}
+
+/* Para vista en celular */
+@media only screen and (max-width: 600px) {
+  .bodyIndex .mainCentrado h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #111D4A;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones__opcion {
+    width: 75vw;
+    margin-bottom: 20px;
+  }
+  .bodyIndex .mainCentrado__divContenedorOpciones__opcion div {
+    height: 200px;
+  }
+  .bodyBanderas main {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

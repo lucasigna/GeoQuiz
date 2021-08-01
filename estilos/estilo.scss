@@ -1,0 +1,203 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Vista PC */
+
+.bodyIndex{
+    background-color: $colorFondoCeleste;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    .mainCentrado{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        h1{
+            font-family: $fuente;
+            font-size: 40px;
+            text-align: center;
+            color: $colorAzulFuerte;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        &__divContenedorOpciones{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 75vw;
+            &__opcion{
+                width: 500px;
+                border-radius: 30px;
+                overflow: hidden;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                transition: 0.2s;
+                div{
+                    background-color: $colorAmarilloTransparente;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    height: 300px;
+                    h2{
+                        display: block;
+                        margin: auto 0;
+                        font-family: $fuente;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 500;
+                        color: $colorRojoFuerte;
+                        transition: 0.2s;
+                        &:hover{
+                            transform: scale(1.2);
+                            font-weight: 700;
+                        }
+                    }   
+                }
+                &:hover{
+                    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+                    transform: scale(1.05);
+                }
+            }
+            .divBandera{
+                background-image: url('../img/banderas.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .divCapital{
+                background-image: url('../img/capitales.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.bodyBanderas{
+    background-color: $colorFondoCeleste;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        h1{
+            font-family: $fuente;
+            font-size: 30px;
+            text-align: center;
+            color: $colorAzulFuerte;
+            font-weight: 700;
+        }
+        #imagenBandera{
+            margin-top: 5px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+        }
+        .btnTextoOpcion{
+            font-family: $fuente;
+            font-weight: 500;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 5px 0;
+            background-color: $colorAmarillo;
+            color: $colorNegro;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $colorAmarilloClaro;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .btnSiguiente{
+            font-family: $fuente;
+            font-weight: 500;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            background-color: $colorAzulFuerte;
+            color: $colorBlanco;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $colorAzulSuave;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+/* Para vista en tablet */
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+
+    .bodyIndex{
+        .mainCentrado{
+            h1{
+                font-size: 80px;
+                text-align: center;
+                color: $colorAzulFuerte;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            &__divContenedorOpciones{
+                margin: 0 auto;
+                &__opcion{
+                    width: 35vw;
+                    div{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Para vista en celular */
+
+@media only screen and (max-width: 600px) {
+
+    .bodyIndex{
+        .mainCentrado{
+            h1{
+                font-size: 80px;
+                text-align: center;
+                color: $colorAzulFuerte;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            &__divContenedorOpciones{
+                margin: 0 auto;
+                flex-direction: column;
+                &__opcion{
+                    width: 75vw;
+                    margin-bottom: 20px;
+                    div{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bodyBanderas{
+        main{
+            width: 300px;
+        }
+    }
+
+}
