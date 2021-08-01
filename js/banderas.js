@@ -64,14 +64,13 @@ function corroborarRespuesta(event) {
 // Declaro el boton siguiente
 let btnSiguiente = document.createElement('button');
 
-let resultado;
+let resultado = document.createElement('p');
 
 function agregarBotonSiguiente() {
     btnSiguiente.classList.add('btnSiguiente');
     btnSiguiente.innerHTML = 'Siguiente';
     if (ronda == 10) {
         btnSiguiente.innerHTML = 'Jugar de nuevo';
-        resultado = document.createElement('p');
         resultado.innerHTML = `¡Obtuviste ${puntos}/500 puntos!`
         resultado.classList.add('puntosFinalesParrafo');
         main.appendChild(resultado);
