@@ -148,6 +148,83 @@
     }
 }
 
+
+.bodyCapitales{
+    background-color: $colorFondoCeleste;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        h1{
+            font-family: $fuente;
+            font-size: 30px;
+            text-align: center;
+            color: $colorAzulFuerte;
+            font-weight: 700;
+        }
+        div{
+            background-color: $colorAmarillo;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+            h2{
+                font-family: $fuente;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+        .btnTextoOpcion{
+            font-family: $fuente;
+            font-weight: 500;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 5px 0;
+            background-color: $colorAmarillo;
+            color: $colorNegro;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $colorAmarilloClaro;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .btnSiguiente{
+            font-family: $fuente;
+            font-weight: 500;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            background-color: $colorAzulFuerte;
+            color: $colorBlanco;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $colorAzulSuave;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .puntosFinalesParrafo{
+            font-family: $fuente;
+            font-size: 20px;
+            font-weight: 500;
+            color: $colorAzulFuerte;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 /* Para vista en tablet */
 
 @media only screen and (min-width: 600px) and (max-width: 960px) {

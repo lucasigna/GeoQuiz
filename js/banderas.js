@@ -5,7 +5,7 @@ function getRandomNumber(max) {
     return Math.floor(Math.random() * (max+1));
 }
 
-let preguntaActual = preguntas[getRandomNumber(48)];
+let preguntaActual = preguntas[getRandomNumber(47)];
 
 let imagenBandera = document.getElementById('imagenBandera');
 
@@ -116,5 +116,3 @@ function generarNuevaPregunta() {
         opcion.addEventListener('click', corroborarRespuesta);
     }
 }
-
-
